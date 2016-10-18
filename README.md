@@ -40,6 +40,7 @@ Follow up demand changes.
 (7).phpmyadmin        # Can upgrade phpMyadmin。
 
 3. extensions
+
   perform: ./addons.sh {install|uninstall} {eaccelerator|xcache|memcached|opcache|redis|imagemagick|ioncube}
 
 Cache acceleration:
@@ -51,24 +52,29 @@ Cache acceleration:
     NOTE: Please do not install multiple cache class extension module, multiple problems may lead to web site!
 
 4. Image processing
+
   perform: ./addons.sh {install|uninstall} imageMagick imageMagick
   Path: /usr/local/imagemagick/bin/
 
 5. Decryption
+
   perform: ./addons.sh {install|uninstall} ionCube.
 
 Other:
-  Optional 1, perform: ./php5.2.17.sh  # Install a don't conflict with LNMP PHP 5.2.17 exist alone, directory in/usr/local/php52 /, when using need to nginx virtual host configuration text > a PHP - cgi. The sock is modified to PHP - cgi52. Can call PHP5.2.17 sock. 
-  # The following tools in LNMP installation package tools directory
-  Optional 2, perform：./reset_mysql_root_password.sh # Reset MySQL/MariaDB root password.
-  Optional 3, perform：./check502.sh                  # Can detect whether PHP - FPM hang up, 502 error when restart, cooperate to use crontab 
-  Optional 4, perform：./cut_nginx_logs.sh            # Log cutting script.
-  Optional 5, perform：./remove_disable_function.sh   # Run this script to disable the function can be deleted.
+
+ Optional 1, perform: ./php5.2.17.sh  # Install a don't conflict with LNMP PHP 5.2.17 exist alone, directory in/usr/local/php52 /, when using need to nginx virtual host configuration text > a PHP - cgi. The sock is modified to PHP - cgi52. Can call PHP5.2.17 sock. 
+ The following tools in LNMP installation package tools directory
+ Optional 2, perform：./reset_mysql_root_password.sh # Reset MySQL/MariaDB root password.
+ Optional 3, perform：./check502.sh                  # Can detect whether PHP - FPM hang up, 502 error when restart, cooperate to use crontab 
+ Optional 4, perform：./cut_nginx_logs.sh            # Log cutting script.
+ Optional 5, perform：./remove_disable_function.sh   # Run this script to disable the function can be deleted.
 
 6. Uninstall
+
   Uninstall LNMP、LNMPA or LAMP, perform：./uninstall.sh Select uninstall according to directions.
 
 7. State management
+
   LNMP/LNMPA/LMAP State management：lnmp {start|stop|reload|restart|kill|status}
   Nginx State management：lnmp nginx or /etc/init.d/nginx {start|stop|reload|restart}
   MySQL State management：lnmp mysql or /etc/init.d/mysql {start|stop|restart|reload|force-reload|status}
@@ -78,11 +84,13 @@ Other:
   Apache State management：lnmp httpd or /etc/init.d/httpd {start|stop|restart|graceful|graceful-stop|configtest|status}
 
 8. Virtual host management
+
   ADD：lnmp vhost add
   DELETE：lnmp vhost del
   LIST：lnmp vhost list
 
 9. Related to the graphical interface
+
   PHPMyAdmin：http://yourIP/phpmyadmin/
   phpinfo：http://yourIP/phpinfo.php
   PHP probe：http://yourIP/p.php
@@ -92,6 +100,7 @@ Other:
 # LNMP related catalog file
 
 1. Directory location
+
   Nginx：/usr/local/nginx/
   MySQL：/usr/local/mysql/
   MariaDB：/usr/local/mariadb/
