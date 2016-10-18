@@ -31,19 +31,19 @@ Follow up demand changes.
 
 2. Parameter meaning
 
-(1).nginx             # Can be upgraded to any Nginx version.
-(2).mysql             # Can be upgraded to any MySQL version, the MySQL upgrade risk is bigger, although will automatically backup data, still suggest to backup again.
-(3).mariadb           # Can upgrade installed Mariadb, although will automatically backup data, still suggest to backup again.
-(4).m2m               # Can upgrade to Mariadb from MySQL, although will automatically backup data, still suggest to backup again.
-(5).php               # Applies only to LNMP, most can be upgraded to PHP version.
-(6).phpa              # Can upgrade LNMPA/to most PHP version of the LAMP.
-(7).phpmyadmin        # Can upgrade phpMyadmin。
+  (1).nginx             # Can be upgraded to any Nginx version.
+  (2).mysql             # Can be upgraded to any MySQL version, the MySQL upgrade risk is bigger, although will automatically backup data, still suggest to backup again.
+  (3).mariadb           # Can upgrade installed Mariadb, although will automatically backup data, still suggest to backup again.
+  (4).m2m               # Can upgrade to Mariadb from MySQL, although will automatically backup data, still suggest to backup again.
+  (5).php               # Applies only to LNMP, most can be upgraded to PHP version.
+  (6).phpa              # Can upgrade LNMPA/to most PHP version of the LAMP.
+  (7).phpmyadmin        # Can upgrade phpMyadmin。
 
 3. extensions
 
   perform: ./addons.sh {install|uninstall} {eaccelerator|xcache|memcached|opcache|redis|imagemagick|ioncube}
 
-Cache acceleration:
+  Cache acceleration:
     xcache            # When installation should choose version and a password,through http://yourIP/xcache/ manage. Username: admin, Password you can set when install xcache.
     redis
     memcached         # Can choose the PHP memcache or PHP - memcached extension.
@@ -60,14 +60,14 @@ Cache acceleration:
 
   perform: ./addons.sh {install|uninstall} ionCube.
 
-Other:
+  Other:
 
- Optional 1, perform: ./php5.2.17.sh  # Install a don't conflict with LNMP PHP 5.2.17 exist alone, directory in/usr/local/php52 /, when using need to nginx virtual host configuration text > a PHP - cgi. The sock is modified to PHP - cgi52. Can call PHP5.2.17 sock. 
- The following tools in LNMP installation package tools directory
- Optional 2, perform：./reset_mysql_root_password.sh # Reset MySQL/MariaDB root password.
- Optional 3, perform：./check502.sh                  # Can detect whether PHP - FPM hang up, 502 error when restart, cooperate to use crontab 
- Optional 4, perform：./cut_nginx_logs.sh            # Log cutting script.
- Optional 5, perform：./remove_disable_function.sh   # Run this script to disable the function can be deleted.
+   Optional 1, perform: ./php5.2.17.sh  # Install a don't conflict with LNMP PHP 5.2.17 exist alone, directory in/usr/local/php52 /, when using need to nginx virtual host configuration text > a PHP - cgi. The sock is modified to PHP - cgi52. Can call PHP5.2.17 sock. 
+   The following tools in LNMP installation package tools directory
+   Optional 2, perform：./reset_mysql_root_password.sh # Reset MySQL/MariaDB root password.
+   Optional 3, perform：./check502.sh                  # Can detect whether PHP - FPM hang up, 502 error when restart, cooperate to use crontab 
+   Optional 4, perform：./cut_nginx_logs.sh            # Log cutting script.
+   Optional 5, perform：./remove_disable_function.sh   # Run this script to disable the function can be deleted.
 
 6. Uninstall
 
@@ -119,5 +119,5 @@ Other:
 
 # Technical support
 
-Technical support BBS: http://bbs.vpser.net/forum-25-1.html
+  Technical support BBS: http://bbs.vpser.net/forum-25-1.html
 
