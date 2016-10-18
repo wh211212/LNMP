@@ -19,23 +19,25 @@ Follow up demand changes.
 
 # Commonly used functions
 
-The following carry out, LNMP directory for the default for lnmp1.3 - full or lnmp1.3, can customize the name of the other
+  The following carry out, LNMP directory for the default for lnmp1.3 - full or lnmp1.3, can customize the name of the other
 
 1. Installl FTP Server
- perform：./pureftpd.sh install,Can use lnmp ftp {add|list|del} manage ftp.
 
-The upgrade script
+  perform：./pureftpd.sh install,Can use lnmp ftp {add|list|del} manage ftp.
+
+  The upgrade script
   perform: ./upgrade.sh   #According to the prompt to choose
-Also can use directly parameters: ./upgrade.sh {nginx|mysql|mariadb|php|phpa|m2m|phpmyadmin}
+  Also can use directly parameters: ./upgrade.sh {nginx|mysql|mariadb|php|phpa|m2m|phpmyadmin}
 
 2. Parameter meaning
-    nginx             # Can be upgraded to any Nginx version.
-    mysql             # Can be upgraded to any MySQL version, the MySQL upgrade risk is bigger, although will automatically backup data, still suggest to backup again.
-    mariadb           # Can upgrade installed Mariadb, although will automatically backup data, still suggest to backup again.
-    m2m               # Can upgrade to Mariadb from MySQL, although will automatically backup data, still suggest to backup again.
-    php               # Applies only to LNMP, most can be upgraded to PHP version.
-    phpa              # Can upgrade LNMPA/to most PHP version of the LAMP.
-    phpmyadmin        # Can upgrade phpMyadmin。
+
+(1).nginx             # Can be upgraded to any Nginx version.
+(2).mysql             # Can be upgraded to any MySQL version, the MySQL upgrade risk is bigger, although will automatically backup data, still suggest to backup again.
+(3).mariadb           # Can upgrade installed Mariadb, although will automatically backup data, still suggest to backup again.
+(4).m2m               # Can upgrade to Mariadb from MySQL, although will automatically backup data, still suggest to backup again.
+(5).php               # Applies only to LNMP, most can be upgraded to PHP version.
+(6).phpa              # Can upgrade LNMPA/to most PHP version of the LAMP.
+(7).phpmyadmin        # Can upgrade phpMyadmin。
 
 3. extensions
   perform: ./addons.sh {install|uninstall} {eaccelerator|xcache|memcached|opcache|redis|imagemagick|ioncube}
