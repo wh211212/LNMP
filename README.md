@@ -124,3 +124,9 @@
 
   Technical support BBS: http://bbs.vpser.net/forum-25-1.html
 
+# NOTE
+
+  If you git clone this project to your local,Please download and install LNMP required source package.Download are necessary package to LNMP SRC subdirectory of the directory
+ 
+  Download address: http://soft.vpser.net 
+  
