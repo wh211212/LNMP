@@ -4,6 +4,20 @@
   LNMPA (Nginx/MySQL/PHP/Apache), LAMP (Apache/MySQL/PHP) Shell program production environment. At the same time provide some practical tools such as: virtual host management, FTP user management, Nginx, MySQL/MariaDB, PHP upgrades, common cache component installation, reset the MySQL root password, 502 automatic restart protective DenyHosts, log cutting, SSH/Fail2Ban, backup, and many other useful scripts.
 
   LNMP website：https://lnmp.org
+  Emial to : shaonbean@qq.com
+#System requirements:
+
+  CentOS/RHEL/Fedora/Debian/Ubuntu/Raspbian Linux system
+
+  Need more than 5 gb hard disk space left
+
+  Need more than 128 MB of memory (if the small memory is 128 MB VPS, Xen requires a SWAP, should have at least 128 MB of OpenVZ more vSWAP or sudden memory), pay attention to the small memory, do not use a 64 - bit system.
+
+  To install MySQL 5.6 or 5.7 and MariaDB 10 must be more than 1 g memory!.
+
+  VPS or server, it must have been connected to the Internet and you must set up the network source can't be a CD source, at the same time VPS/DNS server to normal!
+
+  Under Linux case-sensitive, when entering the command, please note!
 
 # Installation
 
